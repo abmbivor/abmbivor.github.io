@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <button id="themeToggle">🌙</button>
+</div>
+
+<div class="container">
+
+    <h1 class="fade-in">⏳ Countdown Timer</h1>
+
+    <!-- PICKER SECTION -->
+    <div id="pickerSection" class="section fade-in">
+        <label>Select a date & time:</label>
+        <input type="datetime-local" id="datetimeInput">
+        <button id="startBtn" class="primary-btn">Create Countdown</button>
+    </div>
+
+    <!-- SINGLE COUNTDOWN DISPLAY -->
+    <div id="countdownSection" class="section hidden fade-in">
+        <h2 id="targetDate"></h2>
+        <div id="timer" class="timer"></div>
+
+        <h3>Share this countdown:</h3>
+        <div class="share-box">
+            <input type="text" id="shareLink" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+         <!-- HOME BUTTON (added) -->
+        <button id="homeBtn" class="secondary-btn">🏠 Home</button>
+    </div>
+
+    <!-- MULTIPLE COUNTDOWNS LIST -->
+    <div id="savedSection" class="fade-in">
+        <h2>Saved Countdowns</h2>
+        <ul id="savedList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
